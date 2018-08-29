@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MassConverter</string>
+    <string name="kg">to kg</string>
+    <string name="lb">to lb</string>
+    <string name="convert">Convert</string>
+</resources>
