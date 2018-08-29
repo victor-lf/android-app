@@ -48,11 +48,7 @@ public class MainActivity extends Activity {
 
 }
 
-
-
-
 // Convert from Celsius to Fahrenheit and vice versa
-
 class ConverterUtil {
     // converts to celsius
     public static float convertFahrenheitToCelsius(float fahrenheit) {
@@ -64,4 +60,3 @@ class ConverterUtil {
         return ((celsius * 9) / 5) + 32;
     }
 }
-
