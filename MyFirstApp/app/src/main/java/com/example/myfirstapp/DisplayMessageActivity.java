@@ -1,9 +1,12 @@
 package com.example.myfirstapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
@@ -20,4 +23,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         textView.setText(message);
     }
+
+    public void onButtonClick(View v) {
+        VideoView videoview = (VideoView) findViewById(R.id.videoview);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.test);
+        videoview.setVideoURI(uri);
+        videoview.start();
+    }
+
+
 }
